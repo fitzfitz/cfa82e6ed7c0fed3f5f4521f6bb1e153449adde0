@@ -1,0 +1,34 @@
+.calendar-wrap {
+  display: flex;
+  overflow: auto;
+  .calendar-item {
+    height: 54px;
+    min-width: 54px;
+    width: 54px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    font-size: 14px;
+    &.isWeekend {
+      opacity: .3
+    }
+  }
+}
+
+.buttons .headroom.headroom--pinned.headroom--scrolled {
+  transform: translate3d(0px, 102px, 0px) !important;
+}
+
+.cart .headroom--unpinned {
+  transform: translate3d(0px, 150vh, 0px) !important;
+}
+.cart .headroom--pinned {
+  transform: translate3d(0px, 100vh, 0px) !important;
+}
+.cart .headroom--unfixed {
+  transform: none !important;
+}
